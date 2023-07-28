@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GymBro</name>
+    </assembly>
+    <members>
+        <member name="P:GymBro.ViewModel.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:GymBro.ViewModel.BaseViewModel.isBusy"/>
+        </member>
+        <member name="P:GymBro.ViewModel.BaseViewModel.Title">
+            <inheritdoc cref="F:GymBro.ViewModel.BaseViewModel.title"/>
+        </member>
+        <member name="F:GymBro.ViewModel.GymBroMapViewModel.openMapCommand">
+            <summary>The backing field for <see cref="P:GymBro.ViewModel.GymBroMapViewModel.OpenMapCommand"/>.</summary>
+        </member>
+        <member name="P:GymBro.ViewModel.GymBroMapViewModel.OpenMapCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:GymBro.ViewModel.GymBroMapViewModel.OpenMapAsync"/>.</summary>
+        </member>
+        <member name="F:GymBro.ViewModel.GymBroWLViewModel.openWorkoutsCommand">
+            <summary>The backing field for <see cref="P:GymBro.ViewModel.GymBroWLViewModel.OpenWorkoutsCommand"/>.</summary>
+        </member>
+        <member name="P:GymBro.ViewModel.GymBroWLViewModel.OpenWorkoutsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:GymBro.ViewModel.GymBroWLViewModel.OpenWorkoutsAsync"/>.</summary>
+        </member>
+        <member name="F:GymBro.ViewModel.GymBroWPViewModel.openWorkoutsCommand">
+            <summary>The backing field for <see cref="P:GymBro.ViewModel.GymBroWPViewModel.OpenWorkoutsCommand"/>.</summary>
+        </member>
+        <member name="P:GymBro.ViewModel.GymBroWPViewModel.OpenWorkoutsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:GymBro.ViewModel.GymBroWPViewModel.OpenWorkoutsAsync"/>.</summary>
+        </member>
+    </members>
+</doc>

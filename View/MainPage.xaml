@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymBro.View.MainPage"
+             xmlns:viewmodel="clr-namespace:GymBro.ViewModel"
+             Title="{Binding Title}" BackgroundImageSource="{AppThemeBinding Light='background_pc.png', Dark='background_pc2.png'}">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            Margin="5,10,5,10"
+            VerticalOptions="StartAndExpand">
+
+            <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto" RowSpacing="20">
+                <Label Text="Your Bmi" FontSize="Large" FontAttributes="Bold"/>
+                <Label Text="{Binding Bmi}" Grid.Row="1"/>
+                <Label Text="Calories" FontSize="Large" Grid.Row="2" FontAttributes="Bold"/>
+                <Label Text="{Binding Calories}" Grid.Row="3"/>
+                <Label Text="Workouts to be done" FontSize="Large" Grid.Row="4" FontAttributes="Bold"/>
+                <Label Text="{Binding Workouts}" Grid.Row="5"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

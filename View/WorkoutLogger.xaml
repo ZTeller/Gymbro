@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymBro.View.WorkoutLogger"
+             Title="{Binding Title}"
+             BackgroundImageSource="{AppThemeBinding Light='background_pc.png', Dark='background_pc2.png'}">
+    <Grid RowDefinitions="Auto, Auto, Auto,auto,auto, *, auto" ColumnDefinitions="*">
+        <Label Text="Here you can log your workout for any day. You can input any excercise, number of sets, number of reps and weight"
+               HorizontalOptions="Center" 
+               Margin="20"
+               FontSize="14"/>
+
+        <VerticalStackLayout Grid.Row="1" Grid.ColumnSpan="2" Spacing="20" Margin="20">
+            <Label Text="Date:" HorizontalOptions="Start"/>
+            <DatePicker IsEnabled="{Binding DateEnabled}" MaximumDate="{Binding MaxDate}"
+                        TextColor="Blue" FontSize="17" HorizontalOptions="Center" Date="{Binding Date}"/>
+        </VerticalStackLayout>
+        <HorizontalStackLayout Grid.Row="2" Grid.ColumnSpan="2" HorizontalOptions="Center" Spacing="5" Margin="20">
+            <VerticalStackLayout>
+                <Label Text="Excercise"
+                    Margin="10"/>
+                <Border Stroke="{StaticResource Primary}" StrokeThickness="2" StrokeShape="RoundRectangle 40,0,0,40">
+                    <Entry
+                        Text="{Binding Excercise}"
+                        WidthRequest="150"/>
+                </Border>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <Label Text="Sets"
+                    Margin="10"
+                    Grid.Column="1"/>
+                <Border Stroke="{StaticResource Primary}" StrokeThickness="2" StrokeShape="RoundRectangle 40,0,0,40">
+                    <Entry
+                        Text="{Binding Sets}"
+                        WidthRequest="40"/>
+                </Border>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <Label Text="Reps"
+                    Margin="10"
+                    Grid.Column="1"/>
+                <Border Stroke="{StaticResource Primary}" StrokeThickness="2" StrokeShape="RoundRectangle 40,0,0,40">
+                    <Entry
+                        Text="{Binding Reps}"
+                        WidthRequest="40"/>
+                </Border>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <Label Text="Weight"
+                    Margin="10"
+                    Grid.Column="1"/>
+                <Border Stroke="{StaticResource Primary}" StrokeThickness="2" StrokeShape="RoundRectangle 40,0,0,40">
+                    <Entry
+                        Text="{Binding Weight}"
+                        WidthRequest="40"/>
+                </Border>
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+        <Button Text="Add to Excercise"
+                Grid.Row="3"
+                Margin="20"
+                MaximumWidthRequest="300"
+                FontSize="14"
+                Command="{Binding AddToExcercise}"/>
+        <Button Text="End Excercise"
+                Grid.Row="4"
+                Margin="20"
+                Command="{Binding FinishExcercise}"/>
+        <CollectionView ItemsSource="{Binding ExcerciseCollection}" Grid.Row="5" Margin="20">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding}" FontAttributes="Bold" FontSize="Medium"/>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Text="See Previous workouts"
+                Grid.Row="6"
+                Margin="20"
+                Command="{Binding OpenWorkoutsCommand}"/>
+    </Grid>
+</ContentPage>

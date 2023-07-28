@@ -1,0 +1,1 @@
+C:\Users\telle\Documents\GymBro\GymBro\bin\Release\net6.0-windows10.0.19041.0\win10-x64\AppPackages\GymBro_1.0.0.1_Test\GymBro_1.0.0.1_x64.msix

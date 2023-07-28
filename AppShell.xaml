@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="GymBro.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:view="clr-namespace:GymBro.View"
+    Shell.FlyoutBehavior="Flyout">
+
+    <FlyoutItem Title="Home">
+        <ShellContent
+        ContentTemplate="{DataTemplate view:MainPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Workout Logging">
+        <ShellContent
+        ContentTemplate="{DataTemplate view:WorkoutLogger}"
+        Route="MainPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Workout Planning">
+        <ShellContent
+        ContentTemplate="{DataTemplate view:WorkoutPlanner}"
+        Route="MainPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Calories Tracker">
+        <ShellContent
+        ContentTemplate="{DataTemplate view:CalorieTracker}"
+        Route="MainPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="BMI Index">
+        <ShellContent
+        ContentTemplate="{DataTemplate view:BMI}"
+        Route="MainPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Map of gyms nearby">
+        <ShellContent
+        ContentTemplate="{DataTemplate view:MapScreen}"
+        Route="MainPage" />
+    </FlyoutItem>
+
+</Shell>

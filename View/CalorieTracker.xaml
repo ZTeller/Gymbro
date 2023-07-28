@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymBro.View.CalorieTracker"
+             xmlns:viewmodel="clr-namespace:GymBro.ViewModel"
+             Title="{Binding Title}"
+             BackgroundImageSource="{AppThemeBinding Light='background_pc.png', Dark='background_pc2.png'}">
+    <Grid RowDefinitions="Auto, Auto, Auto, *" ColumnDefinitions="*">
+        <Label Text="This is a Calculator for your recomended daily calorie intake"
+               HorizontalOptions="Center" 
+               Margin="20"/>
+
+        <HorizontalStackLayout Grid.Row="1" Grid.ColumnSpan="2" HorizontalOptions="Center" Margin="10">
+            <VerticalStackLayout>
+                <Label Text="Food"
+                    Margin="10"/>
+                <Border Stroke="{StaticResource Primary}" StrokeThickness="2" StrokeShape="RoundRectangle 40,0,0,40">
+                    <Entry
+                        WidthRequest="100"
+                        Text="{Binding Food}"/>
+                </Border>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <Label Text="Calories per 100g"
+                    Margin="10"
+                    Grid.Column="1"/>
+                <Border Stroke="{StaticResource Primary}" StrokeThickness="2" StrokeShape="RoundRectangle 40,0,0,40">
+                    <Entry
+                        WidthRequest="100"
+                        Text="{Binding Calories}"/>
+                </Border>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <Label Text="Quantity"
+                    Margin="10"
+                    Grid.Column="1"/>
+                <Border Stroke="{StaticResource Primary}" StrokeThickness="2" StrokeShape="RoundRectangle 40,0,0,40">
+                    <Entry
+                        WidthRequest="100"
+                        Text="{Binding Quantity}"/>
+                </Border>
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+        <Button Text="Calculate"
+                Grid.Row="2"
+                Margin="20"
+                Command="{Binding Calculate}"/>
+        <CollectionView ItemsSource="{Binding foodList}" Grid.Row="5" Margin="20">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding}" FontAttributes="Bold" FontSize="Medium"/>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

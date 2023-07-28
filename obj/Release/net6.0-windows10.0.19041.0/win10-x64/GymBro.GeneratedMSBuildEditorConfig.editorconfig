@@ -1,0 +1,70 @@
+is_global = true
+build_property.TargetFramework = net6.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GymBro
+build_property.ProjectDir = C:\Users\telle\Documents\GymBro\GymBro\
+
+[C:/Users/telle/Documents/GymBro/GymBro/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GymBro.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/telle/Documents/GymBro/GymBro/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GymBro.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/telle/Documents/GymBro/GymBro/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GymBro.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/telle/Documents/GymBro/GymBro/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GymBro.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/telle/Documents/GymBro/GymBro/View/BMI.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GymBro.View.BMI.xaml
+build_metadata.AdditionalFiles.TargetPath = View\BMI.xaml
+build_metadata.AdditionalFiles.RelativePath = View\BMI.xaml
+
+[C:/Users/telle/Documents/GymBro/GymBro/View/CalorieTracker.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GymBro.View.CalorieTracker.xaml
+build_metadata.AdditionalFiles.TargetPath = View\CalorieTracker.xaml
+build_metadata.AdditionalFiles.RelativePath = View\CalorieTracker.xaml
+
+[C:/Users/telle/Documents/GymBro/GymBro/View/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GymBro.View.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\MainPage.xaml
+
+[C:/Users/telle/Documents/GymBro/GymBro/View/MapScreen.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GymBro.View.MapScreen.xaml
+build_metadata.AdditionalFiles.TargetPath = View\MapScreen.xaml
+build_metadata.AdditionalFiles.RelativePath = View\MapScreen.xaml
+
+[C:/Users/telle/Documents/GymBro/GymBro/View/WorkoutLogger.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GymBro.View.WorkoutLogger.xaml
+build_metadata.AdditionalFiles.TargetPath = View\WorkoutLogger.xaml
+build_metadata.AdditionalFiles.RelativePath = View\WorkoutLogger.xaml
+
+[C:/Users/telle/Documents/GymBro/GymBro/View/WorkoutPlanner.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GymBro.View.WorkoutPlanner.xaml
+build_metadata.AdditionalFiles.TargetPath = View\WorkoutPlanner.xaml
+build_metadata.AdditionalFiles.RelativePath = View\WorkoutPlanner.xaml

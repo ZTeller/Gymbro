@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymBro.View.BMI"
+             xmlns:viewmodel="clr-namespace:GymBro.ViewModel"
+             Title="{Binding Title}"
+             BackgroundImageSource="{AppThemeBinding Light='background_pc.png', Dark='background_pc2.png'}">
+    <Grid RowDefinitions="Auto ,Auto,Auto, Auto" ColumnDefinitions="*,*">
+        <Label 
+            Text="Body Mass Index (BMI) is a person's weight in kilograms (or pounds) divided by the square of height in meters (or feet). A high BMI can indicate high body fatness"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" 
+            Margin="20"
+            Grid.ColumnSpan="2"/>
+
+        <Image Source="bmi2.png"
+               Aspect="AspectFit"
+               MaximumWidthRequest="500"
+               Grid.ColumnSpan="2"
+               Grid.Row="1"/>
+
+        <HorizontalStackLayout Grid.Row="2" Grid.ColumnSpan="2" HorizontalOptions="Center" Spacing="20" Margin="20">
+            <VerticalStackLayout>
+                <Label Text="Height"
+                    Margin="10"/>
+                <Border Stroke="{StaticResource Primary}" StrokeThickness="2" StrokeShape="RoundRectangle 40,0,0,40">
+                    <Entry
+                        x:Name="HeightEntry"
+                        WidthRequest="150"
+                        Text="{Binding Height}"/>
+                </Border>
+            </VerticalStackLayout>
+            <VerticalStackLayout>
+                <Label Text="Weight"
+                    Margin="10"
+                    Grid.Column="1"/>
+                <Border Stroke="{StaticResource Primary}" StrokeThickness="2" StrokeShape="RoundRectangle 40,0,0,40">
+                    <Entry
+                        x:Name="WeightEntry"
+                        WidthRequest="150"
+                        Text="{Binding Weight}"/>
+                </Border>
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+
+        <Button Text="{Binding ButtonText}"
+                Grid.Row="3"
+                Grid.ColumnSpan="2"
+                Margin="20"
+                Command="{Binding ButtonBMI}"/>
+    </Grid>
+</ContentPage>

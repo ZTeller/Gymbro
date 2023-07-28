@@ -1,0 +1,1 @@
+C:\Users\telle\Documents\GymBro\GymBro\GymBro.csproj;x64
